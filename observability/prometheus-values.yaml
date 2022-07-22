@@ -198,7 +198,7 @@ alertmanager:
     ## If true, alertmanager will create/use a Persistent Volume Claim
     ## If false, use emptyDir
     ##
-    enabled: true
+    enabled: false
 
     ## alertmanager data Persistent Volume access modes
     ## Must match those of existing PV or dynamic provisioner
@@ -932,7 +932,7 @@ server:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    storageClass: "efs-storage"
+    # storageClass: "-"
 
     ## Prometheus server data Persistent Volume Binding Mode
     ## If defined, volumeBindingMode: <volumeBindingMode>
