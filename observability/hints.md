@@ -18,3 +18,4 @@ Configure the helm repo
 
 Install Prometheus
 > helm install prometheus prometheus-community/prometheus -f values.yaml -n observability
+> helm install prometheus prometheus-community/prometheus -n observability

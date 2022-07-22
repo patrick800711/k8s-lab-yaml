@@ -8,4 +8,4 @@ spec:
   storageClassName: efs-storage
   resources:
     requests:
-      storage: 2Gi
+      storage: 8Gi
