@@ -18,4 +18,6 @@ Configure the helm repo
 
 Install Prometheus
 > helm install prometheus prometheus-community/prometheus -f values.yaml -n observability
-> helm install prometheus prometheus-community/prometheus -n observability
+
+Create Ingress for Prometheus Server
+> kubectl create -f ~/k8s-lab-manifests/observability/prometheus-ingress-definition.yaml -n observability
