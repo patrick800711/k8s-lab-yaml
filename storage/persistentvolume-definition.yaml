@@ -4,10 +4,10 @@ metadata:
   name: efs-volume
 spec:
   capacity:
-    storage: 500Mi
+    storage: 2Gi
   volumeMode: Filesystem
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: efs-storage
   csi:
