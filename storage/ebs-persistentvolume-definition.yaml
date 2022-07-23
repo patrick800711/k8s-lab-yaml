@@ -1,0 +1,16 @@
+# Static provisioning method
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ebs-volume
+spec:
+  capacity:
+    storage: 8Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: efs-storage
+  csi:
+    driver: ebs.csi.aws.com
+    volumeHandle: <ebs-volume-id>
