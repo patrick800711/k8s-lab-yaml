@@ -19,7 +19,9 @@ Configure the helm repo
 
 Install Prometheus
 
-> helm install prometheus prometheus-community/prometheus -f ~/k8s-lab-manifests/observability/prometheus-values.yaml -n observability
+> helm install prometheus prometheus-community/prometheus -f prometheus-values.yaml -n observability
+
+> helm install prometheus prometheus-community/prometheus -n prometheus
 
 The values file overrides need for PV's and uses local storage for Prometheus server and Alert Manager
 
