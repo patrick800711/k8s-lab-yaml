@@ -3,3 +3,7 @@ https://catalog.us-east-1.prod.workshops.aws/workshops/76a5dd80-3249-4101-8726-9
 
 Example manifest to configure Storage Class, PV and PV Claim
 https://www.eksworkshop.com/beginner/190_efs/efs.files/efs-pvc.yaml
+
+Git Repo for AWS EBS CSI driver
+https://github.com/kubernetes-sigs/aws-ebs-csi-driver/tree/master/examples/kubernetes
+
